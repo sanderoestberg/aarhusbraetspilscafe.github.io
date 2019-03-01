@@ -1,0 +1,601 @@
+/* CSS DOCUMENT */
+
+@font-face {
+    font-family: 'Msyi';
+    src: url(fonts/msyi.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: Msyi;
+}
+
+.logo {
+    display: block;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, .8);
+    position: fixed;
+    top: 0px;
+    overflow: visible;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+nav ul li {
+    list-style: none;
+    align-self: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px
+}
+
+/*html{
+    background-image:url(../images/forside.png);
+    background-repeat: no-repeat;
+    background-size: cover
+
+}*/
+
+.forside {
+    margin-top: -300px;
+    width: 100%;
+    height: 1392px;
+    background-image: url(../images/forside.png);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.slogan {
+    display: flex;
+    width: 50%;
+    height: 1392px;
+    justify-content: center;
+    margin-left: 25%;
+    align-items: center;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+    font-weight: bolder
+}
+
+/* BOOKING */
+
+
+#booking {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+
+
+
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 360%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 250%;
+    text-align: center;
+    /*margin-right: 13%;*/
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 180%;
+
+}
+
+
+.img1 {
+    float: left;
+    width: 50%;
+    text-align: center;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+    opacity: 1;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.img2 {
+    float: right;
+    width: 50%;
+    text-align: center;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+    opacity: 1;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+/*img{
+    margin-left: 40%;
+    margin-right: 19%;
+}*/
+
+/*.container {
+    position: relative;
+    width: 50%;
+}*/
+
+/*.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}*/
+
+.container:hover .img1 .img2 {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+#booking p {
+    font-size: 20px;
+    display: flex;
+    text-align: left;
+    width: 400px;
+
+    /*margin-left: 28%;
+    margin-right: 28%;*/
+}
+
+ul li {
+    list-style-type: circle;
+    font-size: large;
+}
+
+.box li {
+    padding: 10px;
+    font-size: 70%;
+}
+
+.box {
+    width: 60%;
+    margin-left: 17%;
+    box-sizing: border-box;
+    margin-top: 40px;
+    font-size: 200%
+}
+
+.boxed {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+.boxed ul li {
+    margin-left: 120px;
+    font-size: 130%;
+}
+
+/* SPIL SØGNING */
+
+#spil {
+    margin-top: 80px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    height: 100%;
+    background-image: url(../images/gamesearch.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+
+#spil h1 {
+    color: #fff
+}
+
+/*body {
+	background: #DDD;
+	font-size: 15px;
+}*/
+
+.section-games {
+    text-align: center;
+    position: relative
+}
+
+.section-games .updating {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    font-size: 5rem;
+    margin: 0;
+    transform: rotate(-10deg)
+}
+
+.fake {
+    opacity: 0.3
+}
+
+.games-list-container {
+    margin-bottom: 6rem;
+
+
+}
+
+.search-container {
+    max-width: 720px;
+    margin: 20px auto;
+    position: relative;
+
+}
+
+.search-container th,
+.search-container td {
+    text-align: left;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.search-container.visible {
+    height: 400px
+}
+
+.search-container.visible::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+
+
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.input-container input::placeholder {
+    color: #4b5c88
+}
+
+.input-search {
+    flex: 1;
+    color: #292929;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 16px;
+    box-shadow: 0 3px 32px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background: #eee;
+    transform: translateY(2px);
+    transition: all 80ms ease-in-out;
+    margin-bottom: 20px;
+}
+
+.input-search:focus {
+    box-shadow: 0 3px 62px 1px rgba(0, 0, 0, 0.3);
+    transform: translateY(0)
+}
+
+.input-search:focus ~ .dismiss-button {
+    transform: translateY(0)
+}
+
+.dismiss-button {
+    position: absolute;
+    opacity: 1;
+    right: 0;
+    border: 0;
+    border-bottom: 2px;
+    background: #bbb;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    margin: 0 15px;
+    cursor: pointer;
+    transform: translateY(2px);
+    transition: all 80ms ease-in-out
+}
+
+.dismiss-button--visible {
+    opacity: 1
+}
+
+.dismiss-button:hover {
+    background-color: #222;
+    transform: translateY(2px)
+}
+
+.dismiss-button::after,
+.dismiss-button::before {
+    background-color: white;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform-origin: center center
+}
+
+.dismiss-button::after {
+    width: 2px;
+    height: 50%
+}
+
+.dismiss-button::before {
+    height: 2px;
+    width: 50%
+}
+
+.games-list {
+    max-height: 400px;
+    overflow-y: scroll;
+
+}
+
+thead th {
+    position: sticky;
+    color: aliceblue;
+    top: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8)
+}
+
+.game {
+    align-items: center;
+    font-size: 18px;
+    padding: 3px 16px;
+    line-height: 1.5;
+    color: #eee;
+    transition: all 80ms ease-in-out
+}
+
+.game:last-child {
+    padding-bottom: 20px
+}
+
+.game:hover {
+    font-weight: bold
+}
+
+.games-list table {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.games-list table td:first-child,
+.games-list table th:first-child {
+    width: 60%
+}
+
+.games-list table td:nth-child(2),
+.games-list table th:nth-child(2) {
+    width: 20%;
+    text-align: center
+}
+
+.games-list table td:nth-child(3),
+.games-list table th:nth-child(3) {
+    width: 20%;
+    text-align: center
+}
+
+.game-placement {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 6px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #c1353b
+}
+
+
+
+/* MENU */
+
+#menugrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+
+
+
+
+
+
+/*KONTAKT + FOOTER*/
+
+
+
+
+/*body*/
+#kontakt p {
+    display: flex;
+    width: 50%;
+    font-size: 150%;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 20px;
+    align-items: center;
+
+}
+
+.maps {
+    width: 45%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    /*width="1200" height="525" frameborder="0" style="border:0" allowfullscreen
+    Fjernet fra iframe pga. validater fejl*/
+}
+
+#map1 {
+    margin-left: 6%;
+}
+
+
+h1 {
+    font-family: msyi;
+    text-align: center
+}
+
+/* Footer */
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+H3 {
+    font-family: Msyi;
+    font-size: 1.2em;
+    margin-top: 1.3em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+#footertekst {
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+
+}
+
+#container4 {
+    clear: left;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+#container3 {
+    clear: left;
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 25%;
+
+}
+
+#container2 {
+
+    clear: left;
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 25%;
+}
+
+#container1 {
+
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 25%;
+
+}
+
+#col1 {
+
+    float: left;
+    width: 30%;
+    position: relative;
+    left: 77%;
+    overflow: hidden;
+}
+
+#col2 {
+
+    float: left;
+    width: 21%;
+    position: relative;
+    left: 81%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#col3 {
+    float: left;
+    width: 21%;
+    position: relative;
+    left: 85%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#col4 {
+
+    float: left;
+    width: 25%;
+    position: relative;
+    left: 89%;
+    overflow: hidden;
+}
+
+.icon {
+    margin-left: 47%
+}
