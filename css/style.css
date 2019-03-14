@@ -1,5 +1,30 @@
 /* CSS DOCUMENT */
 
+
+@media only screen and (min-width: 480px) {
+  body {
+    background-color: lightblue;
+  }
+    .slogan {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 25%;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+}
+}
+
+
+@media only screen and (min-width: 767px) {
+  body {
+    background-color: pink;
+  }
+}
+
+ 
 @font-face {
     font-family: 'Msyi';
     src: url(fonts/msyi.ttf);
@@ -59,6 +84,10 @@ nav ul li a {
 
 }*/
 
+
+@media only screen and (min-width: 767px) {
+    
+    
 .forside {
     margin-top: -300px;
     width: 100%;
@@ -231,6 +260,7 @@ ul li {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    z-index: -100;
 
 }
 
@@ -598,4 +628,5 @@ li {
 
 .icon {
     margin-left: 47%
+}
 }
